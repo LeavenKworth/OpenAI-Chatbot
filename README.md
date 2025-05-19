@@ -48,7 +48,7 @@ Firebase Realtime Database or Firestore **was not used**.
 2. API Gateway (C# .NET):
    - The message is received by the API Gateway, which routes it to the backend services.
 3. AI Agent (Python):
-   The message is forwarded to the AI Agent for processing.
+   - The message is forwarded to the AI Agent for processing.
 4. AI Agent:
    - Parses the intent via LLM (OpenAI/Ollama/Mistral)
    - Calls appropriate Midterm API(s)
@@ -75,14 +75,14 @@ Firebase Realtime Database or Firestore **was not used**.
 
 ## Challenges I Faced
 1. Integrating Python AI Agent with C# .NET Gateway:
-It was challenging to properly route HTTP requests from the .NET gateway to the Python AI Agent.
+- It was challenging to properly route HTTP requests from the .NET gateway to the Python AI Agent.
 2.Following the API Gateway pattern using .NET:
-Most online examples for API Gateway were in Node.js, so adapting the Acelot-style architecture into .NET required additional research. I struggled with implementing clean routing logic and managing endpoints across services.
+- Most online examples for API Gateway were in Node.js, so adapting the Acelot-style architecture into .NET required additional research. I struggled with implementing clean routing logic and managing endpoints across services.
 3. LLM API Integration (OpenAI):
-Connecting to the OpenAI API and parsing the model’s response into actionable intents was not straightforward. I had to experiment with different prompt designs and output formats to make it usable in my application logic.
+- Connecting to the OpenAI API and parsing the model’s response into actionable intents was not straightforward. I had to experiment with different prompt designs and output formats to make it usable in my application logic.
 4. Cross-Origin and Dev Environment Setup:
-Setting up three separate services (React, .NET, Python) and making them communicate on local development servers with proper ports and CORS headers was one of the trickiest parts of the project.
-5.No Firebase / Real-time Handling
+- Setting up three separate services (React, .NET, Python) and making them communicate on local development servers with proper ports and CORS headers was one of the trickiest parts of the project.
+5. No Firebase / Real-time Handling
 
 ---
 
