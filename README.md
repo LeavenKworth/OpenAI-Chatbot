@@ -19,8 +19,7 @@ All frontend requests go through the .NET-based API Gateway, following the Ocelo
 
 - Central entry point for all API traffic
 - Routes chat messages to Python AI agent or midterm APIs
-- Basic auth/token passing for simplicity
-- 
+
 ---
 
 ## 💻 Frontend (React)
