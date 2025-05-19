@@ -43,16 +43,23 @@ Firebase Realtime Database or Firestore **was not used**.
 ![sequence](https://github.com/user-attachments/assets/4a560b4f-0736-4b0d-838a-34ffdbab289f)
 
 
-1. User sends a message via the React chat UI.
-2. Message is sent to the API Gateway (C# .NET).
-3. Gateway forwards the message to the AI Agent (Python).
+1. User Interaction:
+   The user sends a message through the React-based chat UI.
+2. API Gateway (C# .NET):
+   The message is received by the API Gateway, which routes it to the backend services.
+3. AI Agent (Python):
+   The message is forwarded to the AI Agent for processing.
 4. AI Agent:
    - Parses the intent via LLM (OpenAI/Ollama/Mistral)
    - Calls appropriate Midterm API(s)
    - Forms a response
-5. Response is routed back to the frontend via the Gateway.
-6. UI is updated with the latest message.
-
+5. Natural Language Conversion
+   The AI Agent converts the raw API response into a natural language reply (e.g., user-friendly explanation or summary).
+6. Final Response Delivery
+   The AI Agent sends the human-readable message to the API Gateway,
+   which then forwards it to the React UI.
+7. UI Update
+   The chat interface updates with the final message, completing the interaction.
 
 ---
 
