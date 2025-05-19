@@ -50,8 +50,8 @@ Firebase Realtime Database or Firestore **was not used**.
 3. AI Agent (Python):
    - The message is forwarded to the AI Agent for processing.
 4. AI Agent:
-   - Parses the intent via LLM (OpenAI/Ollama/Mistral)
-   - Calls appropriate Midterm API(s)
+   - Parses the intent via LLM (OpenAI)
+   - Calls appropriate Midterm API(s) via api-gateway
    - Forms a response
 5. Natural Language Conversion
    - The AI Agent converts the raw API response into a natural language reply (e.g., user-friendly explanation or summary).
