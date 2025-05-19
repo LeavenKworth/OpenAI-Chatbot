@@ -13,9 +13,9 @@ The AI agent is implemented in Python using  OpenAI's API. It parses incoming ch
 
 ---
 
-## 🔄 API Gateway (C# .NET + Acelot)
+## 🔄 API Gateway (C# .NET + Ocelot)
 
-All frontend requests go through the .NET-based API Gateway, following the Acelot pattern:
+All frontend requests go through the .NET-based API Gateway, following the Ocelot pattern:
 
 - Central entry point for all API traffic
 - Routes chat messages to Python AI agent or midterm APIs
@@ -61,7 +61,7 @@ Firebase Realtime Database or Firestore **was not used**.
 | Layer          | Stack / Tool                      |
 |----------------|-----------------------------------|
 | Frontend       | React.js                          |
-| API Gateway    | .NET C# (Acelot-style architecture)|
+| API Gateway    | .NET C# (Ocelot-style architecture)|
 | AI Agent       | Python (LangChain / OpenAI)       |
 
 ---
