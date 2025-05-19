@@ -8,8 +8,8 @@ import re
 from dotenv import load_dotenv
 
 load_dotenv()
-API_GATEWAY = os.getenv("APIGATEWAY_API_URL")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+API_GATEWAY = os.getenv("your api_gateway")
+OPENAI_API_KEY = os.getenv("your key")
 
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
