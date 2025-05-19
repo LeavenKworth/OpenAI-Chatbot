@@ -1,0 +1,88 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/auth/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kingserkan35.onrender.com"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/auth/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/flights/add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kingserkan35.onrender.com"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/flights/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/flights/query",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kingserkan35.onrender.com"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/flights/query",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RequestIdKey": "Request-Id",
+      "AddQueriesToRequest": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/tickets/buy",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kingserkan35.onrender.com"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/tickets/buy",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/tickets/check-in",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kingserkan35.onrender.com"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/tickets/check-in",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/tickets/passenger-list",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "kingserkan35.onrender.com"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/tickets/passenger-list",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/chat",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/chat",
+      "UpstreamHttpMethod": [ "POST", "OPTIONS" ]
+    }
+    
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5265"
+  }
+}
