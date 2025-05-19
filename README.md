@@ -44,7 +44,7 @@ Firebase Realtime Database or Firestore **was not used**.
 
 
 1. User Interaction:
-  - The user sends a message through the React-based chat UI.
+   - The user sends a message through the React-based chat UI.
 2. API Gateway (C# .NET):
    - The message is received by the API Gateway, which routes it to the backend services.
 3. AI Agent (Python):
